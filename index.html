@@ -14,9 +14,25 @@
 </head>
 <body>
    
-    <!-- initial Page -->
-
-    <!-- Body Goes Here -->
+    <div id="calculator">
+        <input id="display" disabled>
+        <div class="row">
+            <button class="button" onclick="inputNumber(7)">7</button>
+            <button class="button" onclick="inputNumber(8)">8</button>
+            <button class="button" onclick="inputNumber(9)">9</button>
+            <button class="button operator" onclick="divide()">/</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="inputNumber(4)">4</button>
+            <button class="button" onclick="inputNumber(5)">5</button>
+            <button class="button" onclick="inputNumber(6)">6</button>
+            <button class="button operator" onclick="multiply()">*</button>
+        </div>
+        
+        <div class="row">
+            <button class="button clear" style="flex: 1;" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
