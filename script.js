@@ -30,3 +30,35 @@ function add() {
     operator = '+';
     display.value = '';
 }
+function subtract() {
+    operand1 = display.value;
+    operator = '-';
+    display.value = '';
+}
+
+function multiply() {
+    operand1 = display.value;
+    operator = '*';
+    display.value = '';
+}
+
+function divide() {
+    operand1 = display.value;
+    operator = '/';
+    display.value = '';
+}
+
+function calculate() {
+    operand2 = display.value;
+    var result;
+    try {
+        result = eval(operand1 + operator + operand2);
+        if (operator === '/' && operand2 === '0') {
+            display.value = 'Error';
+        } else {
+            display.value = result;
+        }
+    } catch (e) {
+        display.value = 'Error';
+    }
+}
