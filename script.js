@@ -30,6 +30,8 @@ function add() {
     operator = '+';
     display.value = '';
 }
+
+
 function subtract() {
     operand1 = display.value;
     operator = '-';
@@ -62,3 +64,4 @@ function calculate() {
         display.value = 'Error';
     }
 }
+
