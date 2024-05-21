@@ -1,60 +1,77 @@
 /* Task Assigned To Nahom Derese */
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
 }
 #calculator {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 320px;
+  background-color: #fff;
+  border: 1px solid #4cff20;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px;
 }
 #display {
-    width: 100%;
-    height: 50px;
-    font-size: 2em;
-    text-align: right;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 92%;
+  height: 50px;
+  font-size: 2em;
+  text-align: right;
+  background-color: #333333;
+  color: rgb(255, 244, 224);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 .button {
-    width: 70px;
-    height: 70px;
-    font-size: 1.5em;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  width: 70px;
+  height: 70px;
+  font-size: 1.5em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(233, 233, 233);
+  background-color: #777777;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 .button:hover {
-    background-color: #e0e0e0;
+  background-color: #505050;
+  color: white;
 }
+
 .operator {
-    background-color: #ff9500;
-    color: white;
+  background-color: #ff9500;
+  color: white;
 }
+
+.eval {
+  background-color: #27a844;
+  color: white;
+}
+
 .operator:hover {
-    background-color: #e08500;
+  background-color: #e08500;
 }
+
+.eval:hover {
+  background-color: #1c7a31;
+}
+
 .clear {
-    background-color: #ff3b30;
-    color: white;
+  background-color: #ff3b30;
+  color: white;
 }
 .clear:hover {
-    background-color: #e03228;
+  background-color: #e03228;
 }
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
